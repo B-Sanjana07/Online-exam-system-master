@@ -1,0 +1,15 @@
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(12.900069, 77.496006);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFj4gNzJYXg7z8mlzs0fHLKvi1MAZYI3c&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+--><button class="btn btn-default btn-lg">Get in Touch</button>
